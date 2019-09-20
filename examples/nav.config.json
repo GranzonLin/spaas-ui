@@ -287,6 +287,10 @@
             {
               "path": "/drawer",
               "title": "Drawer 抽屉"
+            },
+            {
+              "path": "/radio-img-button",
+              "title": "RadioImgButton 带图片的radio"
             }
           ]
         }
@@ -581,6 +585,10 @@
             {
               "path": "/drawer",
               "title": "Drawer"
+            },
+            {
+              "path": "/radio-img-button",
+              "title": "RadioImgButton"
             }
           ]
         }
@@ -875,6 +883,10 @@
             {
               "path": "/drawer",
               "title": "Drawer"
+            },
+            {
+              "path": "/radio-img-button",
+              "title": "RadioImgButton"
             }
           ]
         }
@@ -1169,6 +1181,10 @@
             {
               "path": "/drawer",
               "title": "Drawer"
+            },
+            {
+              "path": "/radio-img-button",
+              "title": "RadioImgButton"
             }
           ]
         }
