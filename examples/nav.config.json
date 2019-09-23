@@ -287,6 +287,19 @@
             {
               "path": "/drawer",
               "title": "Drawer 抽屉"
+            },
+            {
+              "path": "/lr-container",
+              "title": "LrContainer 左右布局容器"
+            }
+          ]
+        },
+        {
+          "groupName": "Expand",
+          "list": [
+            {
+              "path": "/loading-button",
+              "title": "LoadingButton 加载按钮"
             }
           ]
         }
@@ -581,6 +594,19 @@
             {
               "path": "/drawer",
               "title": "Drawer"
+            },
+            {
+              "path": "/lr-container",
+              "title": "LrContainer"
+            }
+          ]
+        },
+        {
+          "groupName": "Expand",
+          "list": [
+            {
+              "path": "/loading-button",
+              "title": "LoadingButton"
             }
           ]
         }
@@ -875,6 +901,19 @@
             {
               "path": "/drawer",
               "title": "Drawer"
+            },
+            {
+              "path": "/lr-container",
+              "title": "LrContainer"
+            }
+          ]
+        },
+        {
+          "groupName": "Expand",
+          "list": [
+            {
+              "path": "/loading-button",
+              "title": "LoadingButton"
             }
           ]
         }
@@ -1169,6 +1208,14 @@
             {
               "path": "/drawer",
               "title": "Drawer"
+            },
+            {
+              "path": "/lr-container",
+              "title": "LrContainer"
+            },
+            {
+              "path": "/loading-button",
+              "title": "LoadingButton"
             }
           ]
         }
