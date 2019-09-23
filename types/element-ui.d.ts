@@ -79,7 +79,10 @@ import { ElInfiniteScroll } from './infinite-scroll'
 import { ElPageHeader } from './page-header'
 import { ElAvatar } from './avatar'
 import { ElDrawer } from './drawer'
-import { ElRadioImgButton } from './radio-img-button'
+import { ElLrContainer } from './lr-container'
+import { ElLoadingButton } from './loading-button'
+
+import { ElRadioImgButton } from './radio-img-button'
 
 export interface InstallationOptions {
   locale: any,
@@ -341,6 +344,12 @@ export class Avatar extends ElAvatar {}
 
 /** Drawer Component */
 export class Drawer extends ElDrawer {}
+
+/** LrContainer Component */
+export class LrContainer extends ElLrContainer {}
+
+/** LoadingButton Component */
+export class LoadingButton extends ElLoadingButton {}
 
 /** RadioImgButton Component */
 export class RadioImgButton extends ElRadioImgButton {}

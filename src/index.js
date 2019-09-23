@@ -82,6 +82,8 @@ import CascaderPanel from '../packages/cascader-panel/index.js';
 import Avatar from '../packages/avatar/index.js';
 import Drawer from '../packages/drawer/index.js';
 import RadioImgButton from '../packages/radio-img-button/index.js';
+import LrContainer from '../packages/lr-container/index.js';
+import LoadingButton from '../packages/loading-button/index.js';
 import locale from 'element-ui/src/locale';
 import CollapseTransition from 'element-ui/src/transitions/collapse-transition';
 
@@ -163,6 +165,8 @@ const components = [
   Avatar,
   Drawer,
   RadioImgButton,
+  LrContainer,
+  LoadingButton,
   CollapseTransition
 ];
 
@@ -285,4 +289,7 @@ export default {
   Avatar,
   Drawer,
   RadioImgButton
+  Drawer,
+  LrContainer,
+  LoadingButton
 };
