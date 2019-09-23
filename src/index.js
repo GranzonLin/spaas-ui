@@ -288,8 +288,7 @@ export default {
   CascaderPanel,
   Avatar,
   Drawer,
-  RadioImgButton
-  Drawer,
+  RadioImgButton,
   LrContainer,
   LoadingButton
 };
