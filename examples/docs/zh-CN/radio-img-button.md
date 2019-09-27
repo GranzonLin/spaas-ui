@@ -8,11 +8,36 @@
 ```html
 <template>
    <div style="display: flex">
-       <el-radio-img-button v-model="value" imgUrl="http://img5.imgtn.bdimg.com/it/u=3987907653,720009510&fm=26&gp=0.jpg" label="2" text="radio-img-button" vertical description="真是一段很长很长很真是一段很长很长很长的文字真是一段很长很长很长的文字真是一段很长很长很长的文字真是一段很长很长很长的文字真是一段很长很长很长的文字真是一段很长很长很长的文字真是一段很长很长很长的文字长的文字"></el-radio-img-button>
+      <el-radio-img-button v-model="value" imgUrl="http://img5.imgtn.bdimg.com/it/u=3987907653,720009510&fm=26&gp=0.jpg" label="1" text="radio-img-button" vertical description="我是radio1"></el-radio-img-button>
+      <el-radio-img-button v-model="value" imgUrl="http://img5.imgtn.bdimg.com/it/u=3987907653,720009510&fm=26&gp=0.jpg" label="2" text="radio-img-button" vertical description="真是一段很长很长很真是一段很长很长很长的文字真是一段很长很长很长的文字真是一段很长很长很长的文字真是一段很长很长很长的文字真是一段很长很长很长的文字真是一段很长很长很长的文字真是一段很长很长很长的文字长的文字"></el-radio-img-button>
    </div>
 </template>
 <script>
 export default {
+    data () {
+      return {
+        value: '2'
+      };
+    }
+  }
+</script>
+```
+:::
+
+### 禁用状态
+单选框不可用的状态。
+
+:::demo 只要在`el-radio-img-button`元素中设置`disabled`属性即可，它接受一个`Boolean`，`true`为禁用。
+```html
+<template>
+  <div style="display: flex">
+      <el-radio-img-button v-model="value" disabled imgUrl="http://img5.imgtn.bdimg.com/it/u=3987907653,720009510&fm=26&gp=0.jpg" label="1" text="radio-img-button" vertical description="我是radio1"></el-radio-img-button>
+      <el-radio-img-button v-model="value" imgUrl="http://img5.imgtn.bdimg.com/it/u=3987907653,720009510&fm=26&gp=0.jpg" label="2" disabled text="radio-img-button" vertical description="真是一段很长很长很真是一段很长很长很长的文字真是一段很长很长很长的文字真是一段很长很长很长的文字真是一段很长很长很长的文字真是一段很长很长很长的文字真是一段很长很长很长的文字真是一段很长很长很长的文字长的文字"></el-radio-img-button>
+   </div>
+</template>
+
+<script>
+  export default {
     data () {
       return {
         value: '2'
@@ -32,13 +57,14 @@ export default {
 <template>
    <div style="display: flex">
        <el-radio-img-button v-model="value" imgUrl="http://img5.imgtn.bdimg.com/it/u=3987907653,720009510&fm=26&gp=0.jpg" label="1" width="586px" text="radio-img-button" description="此处风景优美，令人身心向往；但是却带一股寒冷之气，恰恰还是那些市井之地，才充满生活气息；不知是知了还是蛐蛐的叫声，使得夜晚更加的宁静安逸"></el-radio-img-button>
+       <el-radio-img-button v-model="value" imgUrl="http://img5.imgtn.bdimg.com/it/u=3987907653,720009510&fm=26&gp=0.jpg" label="2" width="586px" text="radio-img-button" description="此处风景优美，令人身心向往；但是却带一股寒冷之气，恰恰还是那些市井之地，才充满生活气息；不知是知了还是蛐蛐的叫声，使得夜晚更加的宁静安逸"></el-radio-img-button>
    </div>
 </template>
 <script>
 export default {
     data () {
       return {
-        value: '1'
+        value: '2'
       };
     }
   }
@@ -55,13 +81,14 @@ export default {
 <template>
    <div style="display: flex">
        <el-radio-img-button v-model="value" imgUrl="http://img5.imgtn.bdimg.com/it/u=3987907653,720009510&fm=26&gp=0.jpg" label="1" width="310px" text="按钮文字" description="按钮描述"></el-radio-img-button>
+       <el-radio-img-button v-model="value" imgUrl="http://img5.imgtn.bdimg.com/it/u=3987907653,720009510&fm=26&gp=0.jpg" label="2" width="310px" text="按钮文字" description="按钮描述"></el-radio-img-button>
    </div>
 </template>
 <script>
 export default {
     data () {
       return {
-        value: ''
+        value: '2'
       };
     }
   }
@@ -75,7 +102,7 @@ export default {
 | value / v-model | 绑定值 | string / number / boolean | — | — |
 | disabled  | 是否禁用    | boolean   | — | false   |
 | name | 原生 name 属性 | string    |      —         |     —    |
-| width | 按钮宽度 | string | — | 160px |
+| width | 按钮宽度 | string / number | — | 160px / 160 |
 | imgUrl | 图片地址 | string | — |  — |
 | text | 按钮文字 | string | — |  — |
 | description | 按钮描述 | string | — |  — |

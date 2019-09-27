@@ -7,7 +7,7 @@
         { 'is-bordered': true },
         { 'is-checked': model === label }
       ]"
-         :style="{ width: `${width}`}"
+         :style="{ width: `${numberWidth}px`}"
          role="radio" :aria-checked="model === label"
          :aria-disabled="isDisabled"
          :tabindex="tabIndex"
@@ -70,8 +70,8 @@
       name: String,
       border: Boolean,
       width: {
-        type: String,
-        default: '160px'
+        type: [ String, Number ],
+        default: 160
       },
       vertical: Boolean,
       text: {
@@ -128,6 +128,20 @@
       },
       tabIndex() {
         return (this.isDisabled || (this.isGroup && this.model !== this.label)) ? -1 : 0;
+      },
+      numberWidth() {
+        const width = this.width;
+        if (typeof width === 'number') {
+          return width;
+        }
+        if (typeof width === 'string') {
+          if (/^\d+(?:px)?$/.test(width)) {
+            return parseInt(width, 10);
+          } else {
+            return width;
+          }
+        }
+        return null;
       }
     },
 
